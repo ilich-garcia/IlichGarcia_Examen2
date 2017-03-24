@@ -7,6 +7,6 @@ Logia::Logia(string element, string name) : Fruit(name) {
 }
 
 void Logia::write(ofstream& file) {
-	static_cast<Fruit*>(this) -> write(file);
+	Fruit::write(file);
 	file << "\nElemento: " << element << endl;
 }

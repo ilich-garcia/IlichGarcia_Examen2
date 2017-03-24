@@ -39,7 +39,7 @@ Pirate::Pirate(int positionOcean, string crew, string function, string name, int
 }
 
 void Pirate::write(ofstream& file) {
-	static_cast<Being*>(this) -> write(file);
+	Being::write(file);
 	file << "\nOcéano: " << oceans[positionOcean] << endl;
 	file << "Tripulación a la que pertenece: " << crew << endl;
 	file << "Función: " << function << endl;

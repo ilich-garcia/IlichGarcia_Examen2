@@ -37,7 +37,7 @@ Marine::Marine(string date, int positionRange, string name, int position, int ag
 }
 
 void Marine::write(ofstream& file) {
-	static_cast<Being*>(this) -> write(file);
+	Being::write(file);
 	file << "\nFecha: " << date << endl;
 	file << "Rango: " << ranges[positionRange] << endl;
 }

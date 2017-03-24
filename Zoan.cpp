@@ -8,7 +8,7 @@ Zoan::Zoan(string animal, int position, string name) : Fruit(name) {
 }
 
 void Zoan::write(ofstream& file) {
-	static_cast<Fruit*>(this) -> write(file);
+	Fruit::write(file);
 	file << "\nTipo: " << types[position] << endl;
 	file << "Animal: " << animal << endl;
 }

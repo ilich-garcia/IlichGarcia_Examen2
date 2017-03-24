@@ -35,6 +35,6 @@ Revolutionary::Revolutionary(string date, string name, int position, int age, bo
 }
 
 void Revolutionary::write(ofstream& file) {
-	static_cast<Being*>(this) -> write(file);
+	Being::write(file);
 	file << "\nFecha: " << date << endl;
 }

@@ -7,6 +7,6 @@ Paramecia::Paramecia(string description, string name) : Fruit(name) {
 }
 
 void Paramecia::write(ofstream& file) {
-	static_cast<Fruit*>(this) -> write(file);
+	Fruit::write(file);
 	file << "\nDescripción: " << description << endl;
 }

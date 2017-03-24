@@ -13,6 +13,7 @@ class Fruit {
 
 	public:
 		Fruit(string);
+		string getName();
 		virtual void write(ofstream&);
 };
 
