@@ -5,16 +5,19 @@
 
 #include <iostream>
 #include <string>
+#include "Fruit.h"
 
 using namespace std;
 
-class Zoan {
+class Zoan : public Fruit {
 	private:
-		string type[3] = {"Normal", "Prehistórica", "Legendaria"};
+		string types[3] = {"Normal", "Prehistórica", "Legendaria"};
 		string animal;
+		int position;
 
 	public:
-		Zoan(string, string);
+		Zoan(string, int, string);
+		virtual void write(ofstream&);
 };
 
 #endif

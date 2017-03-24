@@ -5,15 +5,17 @@
 
 #include <iostream>
 #include <string>
+#include "Fruit.h"
 
 using namespace std;
 
-class Paramecia {
+class Paramecia : public Fruit {
 	private:
 		string description;
 
 	public:
-		Paramecia(string);
+		Paramecia(string, string);
+		virtual void write(ofstream&);
 };
 
 #endif

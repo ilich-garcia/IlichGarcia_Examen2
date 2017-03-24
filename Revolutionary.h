@@ -5,16 +5,19 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
+#include "Being.h"
 
 using namespace std;
 
-class Revolutionary {
+class Revolutionary : public Being {
 	private:
 		string date;
 
 	public:
-		Revolutionary(string);
-		~Revolutionary();	
+		Revolutionary(string, string, int, int, bool, bool, bool, Fruit*);
+		Revolutionary(string, string, int, int, bool, bool, bool);
+		virtual void write(ofstream&);
 };
 
 #endif

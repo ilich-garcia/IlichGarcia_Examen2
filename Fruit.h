@@ -2,6 +2,7 @@
 #define FRUIT_H
 
 #include <iostream>
+#include <fstream>
 #include <string>
 
 using namespace std;
@@ -12,5 +13,7 @@ class Fruit {
 
 	public:
 		Fruit(string);
+		virtual void write(ofstream&);
 };
+
 #endif
