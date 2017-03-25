@@ -10,7 +10,7 @@ Marine::Marine(string date, int positionRange, string name, int position, int ag
 	string myString;
 	stringstream stringStream;
 	
-	stringStream << name << ".log";
+	stringStream << "names/" << name << ".log";
 
 	myString = stringStream.str();
 
@@ -27,7 +27,7 @@ Marine::Marine(string date, int positionRange, string name, int position, int ag
 	string myString;
 	stringstream stringStream;
 	
-	stringStream << name << ".log";
+	stringStream << "names/" << name << ".log";
 
 	myString = stringStream.str();
 

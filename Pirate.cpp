@@ -11,7 +11,7 @@ Pirate::Pirate(int positionOcean, string crew, string function, string name, int
 	string myString;
 	stringstream stringStream;
 	
-	stringStream << name << ".log";
+	stringStream << "names/" << name << ".log";
 
 	myString = stringStream.str();
 
@@ -29,7 +29,7 @@ Pirate::Pirate(int positionOcean, string crew, string function, string name, int
 	string myString;
 	stringstream stringStream;
 	
-	stringStream << name << ".log";
+	stringStream << "names/" << name << ".log";
 
 	myString = stringStream.str();
 
