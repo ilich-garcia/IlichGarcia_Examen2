@@ -87,10 +87,10 @@ int main(int argc, char const *argv[]) {
 
 					Fruit* fruit = fruits.at(fruitPosition);
 
-					Marine* marine = new Marine(date, positionRange, name, position, age, haslookingHaki, hasarmerHaki, haskingHaki, fruit);
+					Marine* marine = new Marine(date, positionRange, name, position, age, hasLookingHaki, hasArmerHaki, hasKingHaki, fruit);
 					beings.push_back(marine);
 				} else {
-					Marine* marine = new Marine(date, positionRange, name, position, age, haslookingHaki, hasarmerHaki, haskingHaki);
+					Marine* marine = new Marine(date, positionRange, name, position, age, hasLookingHaki, hasArmerHaki, hasKingHaki);
 					beings.push_back(marine);
 				}
 			} else if (beingsOption == 2) { // Agregando Pirate.
@@ -120,13 +120,40 @@ int main(int argc, char const *argv[]) {
 
 					Fruit* fruit = fruits.at(fruitPosition);
 
-					Pirate* pirate = new Pirate(positionOcean, crew, function, name, position, age, haslookingHaki, hasarmerHaki, haskingHaki, fruit);
+					Pirate* pirate = new Pirate(positionOcean, crew, function, name, position, age, hasLookingHaki, hasArmerHaki, hasKingHaki, fruit);
 					beings.push_back(pirate);
 				} else {
-					Pirate* pirate = new Pirate(positionOcean, crew, function, name, position, age, haslookingHaki, hasarmerHaki, haskingHaki);
+					Pirate* pirate = new Pirate(positionOcean, crew, function, name, position, age, hasLookingHaki, hasArmerHaki, hasKingHaki);
 					beings.push_back(pirate);
 				}
 			} else if (beingsOption == 3) { // Agregando Revolutionary.
+				string date;
+
+				cout << "Fecha: ";
+				cin >> date;
+				cout << "Tiene fruta del diablo? (1: Sí, 2: No): ";
+				cin >> hasFruit;
+
+				if (hasFruit == 1) {
+					int fruitPosition;
+
+					for (int i = 0; i < fruits.size(); ++i) {
+						cout << "Nombre: " << fruits.at(i) -> getName() << endl;
+					}
+
+					do {						
+						cout << "Posición de la fruta a agregar: ";
+						cin >> fruitPosition;
+					} while (fruitPosition >= fruits.size());
+
+					Fruit* fruit = fruits.at(fruitPosition);
+
+					Revolutionary* revolutionary = new Revolutionary(date, name, position, age, hasLookingHaki, hasArmerHaki, hasKingHaki, fruit);
+					beings.push_back(revolutionary);
+				} else {
+					Revolutionary* revolutionary = new Revolutionary(date, name, position, age, hasLookingHaki, hasArmerHaki, hasKingHaki);
+					beings.push_back(revolutionary);
+				}
 			}
 		} else if (option == 2) { // Frutas.
 

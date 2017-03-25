@@ -9,7 +9,7 @@ Revolutionary::Revolutionary(string date, string name, int position, int age, bo
 	string myString;
 	stringstream stringStream;
 	
-	stringStream << name << ".log";
+	stringStream << "names/" << name << ".log";
 
 	myString = stringStream.str();
 
@@ -25,7 +25,7 @@ Revolutionary::Revolutionary(string date, string name, int position, int age, bo
 	string myString;
 	stringstream stringStream;
 	
-	stringStream << name << ".log";
+	stringStream << "names/" << name << ".log";
 
 	myString = stringStream.str();
 
