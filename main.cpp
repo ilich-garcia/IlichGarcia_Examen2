@@ -164,27 +164,5 @@ int main(int argc, char const *argv[]) {
 		}
 	} while (option != 3);
 
-	Paramecia* p = new Paramecia("Hana Hana", "Florecer");
-	Paramecia* par = new Paramecia("Gomumu", "Hombre de goma");
-	Paramecia* p2 = new Paramecia("Yomi Yomi", "Renacer");
-	Paramecia* p3 = new Paramecia("Horu Horu", "Modificar el cuerpo humano");
-	Logia* l = new Logia("Pika pika","transformacion");
-	Zoan* zo = new Zoan("Hito Hito",  2," Humano");
-	Pirate* pir = new Pirate(3, "Sombreros de paja", "Lider", "Monkey D. Luffy", 2, 34,true, false, true);
-	Pirate* pir2 = new Pirate(1, "Sombreros de paja",  "Espadachin", "Roronoa Zoro ", 3, 25,true,true,false);
-	Pirate* pir3 = new Pirate(4, "Sombreros de paja", "Navegante", "Nami", 4, 27 ,false,false,false);
-	Pirate* pir4 = new Pirate(2, "Sombreros de paja", "Francotirador", "Usopp", 0, 30, true,false,false);
-	Pirate* pir5 = new Pirate(0, "Sombreros de paja", "Vinsmoke Sanji"  , "Cocinero", 1, 40, true,true,false);
-	Pirate* pir6 = new Pirate(0, "Sombreros de paja", "Tony Tony Chopper" , "Medico", 2, 28, false,false,false);
-	Pirate* pir7 = new Pirate(2, "Sombreros de paja", "Nico Robin" , "Arqueologa", 3, 45, false,false,false);
-	Pirate* pir8 = new Pirate(1, "Sombreros de paja", "Franky" , "Carpintero naval", 0, 33, false,false,false);
-	Pirate* pir9 = new Pirate(3, "Sombreros de paja", "Brook", "Musico Espadachin" ,1, 23, false,false,false);
-	Marine* mr1 = new Marine("23 de noviembre", 0, "Borsalino", 0, 58,true,true,false);
-	Marine* mr2 = new Marine("10 de agosto", 1, "Issho", 1, 48 ,true,true,false);
-	Marine* mr3 = new Marine("21 de septiembre", 2, "Kuzan", 2, 41 ,true,true,false);
-	Marine* mr4 = new Marine("16 de noviembre", 3, "Sakazuki", 3, 55 ,true,true,false);
-	Revolutionary* r1 = new Revolutionary("5 de octubre", "Monkey D Dragon", 0 , 34,true,true,true);
-	Revolutionary* r2 = new Revolutionary("8 de Enero", "Emporio Ivankov", 1, 40,true,true,false);
-	Revolutionary* r3 = new Revolutionary("20 de Marzo", "Sabo" , 2, 22,true,true,false);
 	return 0;
 }
